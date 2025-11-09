@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontak - Galang Sopyan</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+       <nav>
+         <h1>Galang Sopyan</h1>
+         <button id="menu-toggle">☰</button>
+
+           <ul>
+             <li><a href="index.html">Home</a></li>
+             <li><a href="about.html">About</a></li>
+             <li><a href="portofolio.html">Portfolio</a></li>
+             <li><a href="contact.html">Contact</a></li>
+            </ul>
+
+         <button id="theme-toggle">🌙</button>
+       </nav>
+     </header>
+
+    <main class="contact-form-container">
+        <h2>Hubungi Saya</h2>
+        <form id="contactForm">
+            <label for="nama">Nama:</label>
+            <input type="text" id="nama" name="nama" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="pesan">Pesan:</label>
+            <textarea id="pesan" name="pesan" rows="5" required></textarea>
+
+            <button onclick="kirimPesan()">Kirim</button>
+
+        </form>
+    </main>
+
+    <footer class="site-footer">
+        <address>
+            <p>Kontak : <a href="galangsopyan05@gmail.com">galangsopyan05.com</a></p>
+        </address>
+        <p>&copy; <span id="year"></span> Galang Sopyan. Semua hak dilindungi.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
